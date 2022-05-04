@@ -1,0 +1,21 @@
+<h1>Dragon Ball z</h1>
+<hr>
+
+<div class="row">
+    
+        <app-personajess [personajes] = personajes></app-personajess>
+
+    <div class="col">
+
+        <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar> 
+
+        <form (ngSubmit) = "borrar()" action="">
+
+            <input class="borrar" type="submit" name="Borrar" value="Borrar">
+
+        </form>
+    </div>
+
+
+
+</div>
